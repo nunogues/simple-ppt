@@ -1,3 +1,8 @@
+let score = {
+  player: 0,
+  bot: 0
+};
+
 export async function playPpt(player) {
  const choices = ["pedra", "papel", "tesoura"];
   const computer = choices[
@@ -18,13 +23,19 @@ let winner;
         (player === "tesoura" && computer === "papel")
     ) {
     winner = "player";
+    score.player += 1
   } else {
     winner = "computador"
+    score.bot += 1
   };
 
   return {
-    player: player,
-    computer: computer,
+    player: {
+      score: score.player
+    },
+    computer: {
+      score: score.bot    
+    },
     winner: winner
   }
 };
