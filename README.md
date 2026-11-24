@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="https://github.com/nunogues/simple-ppt/actions/workflows/tests.yml/badge.svg" alt="Node.js tests" />
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/nunogues/simple-ppt/main/assets/banner.svg" alt="Simple PPT — Pedra, Papel e Tesoura" width="100%" />
 </p>
 
